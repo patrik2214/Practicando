@@ -60,6 +60,7 @@ public class jfPrincipal extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         cbotipo = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -72,12 +73,26 @@ public class jfPrincipal extends javax.swing.JFrame {
         cbociudad = new javax.swing.JComboBox<>();
         jButton3 = new javax.swing.JButton();
         chkvigencia = new javax.swing.JCheckBox();
+        jButton2 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        txtCodCiudad = new javax.swing.JTextField();
+        txtNomCiudad = new javax.swing.JTextField();
+        cboTipoc = new javax.swing.JComboBox<>();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -105,7 +120,7 @@ public class jfPrincipal extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 747, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,39 +138,39 @@ public class jfPrincipal extends javax.swing.JFrame {
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 64, -1, -1));
 
         cboMarca.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel2.add(cboMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 61, 160, -1));
+        jPanel2.add(cboMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 61, 170, -1));
 
-        jLabel8.setText("Placa");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 102, -1, -1));
-        jPanel2.add(txtplaca, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 99, 160, -1));
+        jLabel8.setText("Placa:");
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, -1, -1));
+        jPanel2.add(txtplaca, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, 130, -1));
 
         jLabel9.setText("Modelo:");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 140, -1, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, 10));
 
         jLabel10.setText("Año:");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 180, -1, -1));
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 90, -1, -1));
 
         jLabel11.setText("Color:");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 218, -1, -1));
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
         jLabel12.setText("N° Asientos:");
-        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 256, -1, -1));
-        jPanel2.add(txtmodelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 137, 160, -1));
-        jPanel2.add(txtaño, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 177, 160, -1));
-        jPanel2.add(txtcolor, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 215, 180, -1));
-        jPanel2.add(txtasientos, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 253, 151, -1));
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, -1, -1));
+        jPanel2.add(txtmodelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 170, -1));
+        jPanel2.add(txtaño, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 130, -1));
+        jPanel2.add(txtcolor, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 170, -1));
+        jPanel2.add(txtasientos, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 90, -1));
 
         jLabel13.setText("Vigencia");
-        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
 
         chkestado.setText("vigente");
-        jPanel2.add(chkestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, -1, -1));
+        jPanel2.add(chkestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, -1, -1));
 
         jLabel14.setText("Tipo:");
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, -1, -1));
 
         cbotipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel2.add(cbotipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 130, -1));
+        jPanel2.add(cbotipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 130, -1));
 
         jButton1.setText("Registrar Unidad");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -163,7 +178,15 @@ public class jfPrincipal extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, -1, -1));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, -1, -1));
+
+        jButton9.setText("Registro Por Lote");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -195,10 +218,75 @@ public class jfPrincipal extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, -1, -1));
+        jPanel4.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, -1, -1));
 
         chkvigencia.setText("vigente");
         jPanel4.add(chkvigencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, -1, -1));
+
+        jButton2.setText("Registrar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, 80, -1));
+
+        jButton4.setText("Dar de Baja");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 90, -1));
+
+        jButton5.setText("Modificar");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, -1, -1));
+
+        jButton6.setText("Eliminar");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, -1, -1));
+
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel15.setText("Código:");
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 25, -1, -1));
+
+        jLabel16.setText("Nombre:");
+        jPanel5.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 69, -1, -1));
+
+        jLabel17.setText("Tipo Ciudad:");
+        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 107, -1, -1));
+        jPanel5.add(txtCodCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 26, 147, -1));
+        jPanel5.add(txtNomCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 66, 147, -1));
+
+        cboTipoc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel5.add(cboTipoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 151, -1));
+
+        jButton7.setText("Nuevo");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 70, -1));
+
+        jButton8.setText("Guardar");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -234,6 +322,14 @@ public class jfPrincipal extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem4);
 
+        jMenuItem5.setText("Reporte 04 Recup");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem5);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -244,21 +340,25 @@ public class jfPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 481, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(18, 18, 18))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
@@ -284,6 +384,7 @@ public class jfPrincipal extends javax.swing.JFrame {
         listarciudad();
         listarmarca();
         listartipo_unidad();
+        listarTipociudad();
     }//GEN-LAST:event_formWindowOpened
 
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
@@ -298,6 +399,8 @@ public class jfPrincipal extends javax.swing.JFrame {
             while(rs.next()){
                 txtdireccion.setText(rs.getString("direccion"));
                 txtnombres.setText(rs.getString("nombres"));
+                chkvigencia.setSelected(rs.getBoolean("vigencia"));
+                cbociudad.setSelectedIndex(rs.getInt("codigociudad")-1);
             }
         } catch (Exception ex) {
             Logger.getLogger(jfPrincipal.class.getName()).log(Level.SEVERE, null, ex);
@@ -334,6 +437,92 @@ public class jfPrincipal extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        try {
+            obj.modificarCliente(txtdni.getText(),txtnombres.getText(),txtdireccion.getText(),obj.obtenerCodigoCiudad(cbociudad.getSelectedItem().toString()),this.chkvigencia.isSelected());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this,"Hubo un error");
+        }
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        if(txtCodCiudad.getText().isEmpty()){
+
+            try {
+                obj.registarClienteSolo(txtdni.getText(),txtnombres.getText(),txtdireccion.getText(),obj.obtenerCodigoCiudad(cbociudad.getSelectedItem().toString()),this.chkvigencia.isSelected());
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this,"Hubo un error");
+            }
+        
+        }else{
+            try {
+                obj.registarClienteCiudad(txtdni.getText(),txtnombres.getText(),txtdireccion.getText(),Integer.parseInt(txtCodCiudad.getText()),this.chkvigencia.isSelected(),cboTipoc.getSelectedItem().toString(), txtNomCiudad.getText());
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this,"Hubo un error");
+            }
+        
+        }
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+         try {
+            obj.eliminarCliente(txtdni.getText());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this,"Hubo un error");
+        }
+        
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        try {
+            obj.darBajaCliente(txtdni.getText());
+        } catch (Exception e) {
+        }
+
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        try {
+            Integer valor = obj.generarCodigoCiudad();
+            txtCodCiudad.setText(String.valueOf(valor));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this,"Hubo un error");
+        }
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        try {
+            obj.registrarCiudad(Integer.parseInt(txtCodCiudad.getText()), txtNomCiudad.getText(),cboTipoc.getSelectedItem().toString());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this,"Hubo un error");
+        }
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+        jdReporte4 obj = new jdReporte4(this, true);
+        obj.setLocationRelativeTo(this);
+        obj.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        try {
+            obj.registrarlote(txtdni.getText(),txtplaca.getText(),obj.obtenerCodigoMarca(cboMarca.getSelectedItem().toString()),txtmodelo.getText(),Integer.parseInt(txtaño.getText()),txtcolor.getText(),Integer.parseInt(txtasientos.getText()),this.chkestado.isSelected(),obj.obtenerCodigoTipo(cbotipo.getSelectedItem().toString()));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this,"Hubo un error");
+            
+        }
+    }//GEN-LAST:event_jButton9ActionPerformed
+
     
     private void listartipo_unidad(){
         ResultSet rs = null;
@@ -343,6 +532,20 @@ public class jfPrincipal extends javax.swing.JFrame {
             rs=obj.listartipo();
             while(rs.next()){
                 modelo.addElement(rs.getString("nombretipo"));
+           }
+        } catch (Exception e) {
+        }
+    }
+    
+    
+    public void listarTipociudad(){
+        ResultSet rs = null;
+        DefaultComboBoxModel modelo = new DefaultComboBoxModel();
+        cboTipoc.setModel(modelo);
+        try {
+            rs=obj.listarciudad();
+            while(rs.next()){
+                modelo.addElement(rs.getString("tipociudad"));
            }
         } catch (Exception e) {
         }
@@ -411,18 +614,29 @@ public class jfPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> cboMarca;
+    private javax.swing.JComboBox<String> cboTipoc;
     private javax.swing.JComboBox<String> cbociudad;
     private javax.swing.JComboBox<String> cbotipo;
     private javax.swing.JCheckBox chkestado;
     private javax.swing.JCheckBox chkvigencia;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -438,10 +652,14 @@ public class jfPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JTextField txtCodCiudad;
+    private javax.swing.JTextField txtNomCiudad;
     private javax.swing.JTextField txtasientos;
     private javax.swing.JTextField txtaño;
     private javax.swing.JTextField txtcod;

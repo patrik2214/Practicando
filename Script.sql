@@ -1,7 +1,8 @@
+ --C ciudad,R rural,S selva
 create table ciudad(
 codigoCiudad int not null primary key,
 nombre varchar(30) not null,
-tipoCiudad char(1) not null) --C ciudad,R rural,S selva
+tipoCiudad char(1) not null)
 
 create table cliente(
 dni char(8) not null primary key,
@@ -62,6 +63,7 @@ INSERT INTO cliente VALUES('72120523','Bod Esponja', 'Las piñas 124',2,true);
 INSERT INTO unidad VALUES(1,'123rg6', 1,'Lamborguini',1971,'azul',3,true,3,'72120524');
 INSERT INTO unidad VALUES(2,'123KL5', 3,'Retro',1972,'blanco',4,true,4,'72120523');
 
+/*
 select * from marca;
 select * from ciudad;
 select * from tipo_unidad;
@@ -70,10 +72,6 @@ select * from unidad;
 
 SELECT COALESCE(MAX(codigounidad),0)+1 AS codigo FROM unidad;
 
-select producto.codproducto, producto.nomproducto,producto.descripcion as pro , producto.stock , producto.precio, categoria.codcategoria, categoria.nomcategoria, categoria.descripcion as cat from producto inner join categoria on categoria.codcategoria=producto.codcategoria
-WHERE producto.vigencia=true
-ORDER BY producto.nomproducto;
-
 SELECT cliente.nombres, unidad.codigounidad, marca.nombre, tipo_unidad.nombretipo
 FROM cliente INNER JOIN unidad ON unidad.dni=cliente.dni INNER JOIN tipo_unidad ON
 tipo_unidad.codigotipo=unidad.codigotipo INNER JOIN marca on marca.codigomarca=unidad.codigomarca;
@@ -81,7 +79,7 @@ tipo_unidad.codigotipo=unidad.codigotipo INNER JOIN marca on marca.codigomarca=u
 SELECT cliente.nombres, unidad.codigounidad, marca.nombre, tipo_unidad.nombretipo
 FROM cliente INNER JOIN unidad ON unidad.dni=cliente.dni INNER JOIN tipo_unidad ON
 tipo_unidad.codigotipo=unidad.codigotipo INNER JOIN marca on marca.codigomarca=unidad.codigomarca
-
+*/
 
 CREATE OR REPLACE FUNCTION filtro(opc varchar(10), tipo integer, mar integer)RETURNS TABLE(CodigoU integer, pla char(6),marca integer, model varchar(30), a integer, col varchar(20), numa integer, estado boolean, codt integer, d char(8))AS 
 $$
@@ -105,4 +103,26 @@ BEGIN
 END;
 $$language 'plpgsql';
 
+
+
+CREATE OR REPLACE FUNCTION filtrarClient(cli char(8)) RETURNS TABLE (Documento char(8), Nombre varchar(80), auto varchar(30), cod integer, plac char(6), model varchar(30))AS 
+$$
+DECLARE
+
+BEGIN
+	if(cli is null)then 
+		RETURN QUERY
+		SELECT cliente.dni, cliente.nombres, ciudad.nombre, unidad.codigounidad,unidad.placa, unidad.modelo FROM cliente 
+		INNER JOIN ciudad ON ciudad.codigociudad=cliente.codigociudad
+		INNER JOIN unidad ON unidad.dni=cliente.dni ;
+	else
+		RETURN QUERY
+		SELECT cliente.dni, cliente.nombres, ciudad.nombre, unidad.codigounidad,unidad.placa, unidad.modelo FROM cliente 
+		INNER JOIN ciudad ON ciudad.codigociudad=cliente.codigociudad
+		INNER JOIN unidad ON unidad.dni=cliente.dni 
+		WHERE cliente.dni=cli;
+	end if ;
+
+END;
+$$language'plpgsql'
 

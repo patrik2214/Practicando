@@ -17,8 +17,8 @@ import net.sf.jasperreports.swing.JRViewer;
 
 public class Reportes 
 {
-    
-    public static final String RUTA_REPORTES = "D:\\Ingeniería de Sistemas y computación\\6°CICLO\\DESARROLLO DE APLICACIONES DE ESCRITORIO\\castro\\src\\Reportes\\";
+    // cambiar la direccion
+    public static final String RUTA_REPORTES = "C:\\Users\\laboratorio_computo\\Documents\\Practicando\\src\\Reportes\\";
     public static final String NOMBRE_IMPRESORA = "EPSON TM-T20II Receipt";
     
     
