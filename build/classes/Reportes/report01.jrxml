@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report01" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d6bca483-ffa5-4468-a60d-765c3f25e813">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT cliente.nombres, unidad.codigounidad, marca.nombre, tipo_unidad.nombretipo
+FROM cliente INNER JOIN unidad ON unidad.dni=cliente.dni INNER JOIN tipo_unidad ON
+tipo_unidad.codigotipo=unidad.codigotipo INNER JOIN marca on marca.codigomarca=unidad.codigomarca
+]]>
+	</queryString>
+	<field name="nombres" class="java.lang.String"/>
+	<field name="codigounidad" class="java.lang.Integer"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="nombretipo" class="java.lang.String"/>
+	<group name="Cliente_G">
+		<groupExpression><![CDATA[$F{nombres}]]></groupExpression>
+		<groupHeader>
+			<band height="50">
+				<textField>
+					<reportElement x="115" y="0" width="233" height="50" uuid="2c310c64-323f-4a6f-9598-3e0df86ffa79"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nombres}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="0" width="115" height="50" uuid="5967cd10-5324-4e9d-baf1-d9f77feab8ab"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="12"/>
+					</textElement>
+					<text><![CDATA[Nombre:]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="50"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="79" uuid="0d1e21c0-d66f-4562-b993-2110bcd477fa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="36"/>
+				</textElement>
+				<text><![CDATA[Reporte de Unidades por cliente]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="36" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="115" height="34" uuid="9751d1b3-4a71-4be3-86da-158c0b5c8757"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[codigounidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="115" y="2" width="156" height="32" uuid="353e625c-580e-4ac3-a1bd-3d054233345c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="0" width="156" height="34" uuid="2e01bd28-19d8-4d4d-b6d3-a1c83a04032d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[nombretipo]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="34" width="552" height="1" uuid="8f1f5d80-4c7e-40e6-a730-a19e0c0b9ed8"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="115" height="26" uuid="1d406b68-793a-4665-a0b6-91fa687fa15c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigounidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="0" width="156" height="26" uuid="525f4c05-547f-4e03-9ba6-ca7bc43aca0e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="271" y="0" width="156" height="26" uuid="f62d25b7-b842-41ef-8643-b327a50b2217"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombretipo}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="36" width="552" height="1" uuid="63c0afe0-c3b2-477a-8f8b-8b45e8a32db5"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
