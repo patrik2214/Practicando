@@ -61,6 +61,7 @@ public class jfPrincipal extends javax.swing.JFrame {
         cbotipo = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
+        jLabel20 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -77,6 +78,7 @@ public class jfPrincipal extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -86,6 +88,8 @@ public class jfPrincipal extends javax.swing.JFrame {
         cboTipoc = new javax.swing.JComboBox<>();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -131,46 +135,46 @@ public class jfPrincipal extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel6.setText("Código");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 26, -1, -1));
-        jPanel2.add(txtcod, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 23, 170, -1));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+        jPanel2.add(txtcod, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 170, -1));
 
         jLabel7.setText("Marca:");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 64, -1, -1));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
 
         cboMarca.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel2.add(cboMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 61, 170, -1));
+        jPanel2.add(cboMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 170, -1));
 
         jLabel8.setText("Placa:");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, -1, -1));
-        jPanel2.add(txtplaca, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, 130, -1));
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 80, -1, -1));
+        jPanel2.add(txtplaca, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 130, -1));
 
         jLabel9.setText("Modelo:");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, 10));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, 10));
 
         jLabel10.setText("Año:");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 90, -1, -1));
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, -1, -1));
 
         jLabel11.setText("Color:");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
 
         jLabel12.setText("N° Asientos:");
-        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, -1, -1));
-        jPanel2.add(txtmodelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 170, -1));
-        jPanel2.add(txtaño, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 130, -1));
-        jPanel2.add(txtcolor, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 170, -1));
-        jPanel2.add(txtasientos, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 90, -1));
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, -1, -1));
+        jPanel2.add(txtmodelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 170, -1));
+        jPanel2.add(txtaño, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 130, -1));
+        jPanel2.add(txtcolor, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 170, -1));
+        jPanel2.add(txtasientos, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 90, -1));
 
         jLabel13.setText("Vigencia");
-        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
 
         chkestado.setText("vigente");
-        jPanel2.add(chkestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, -1, -1));
+        jPanel2.add(chkestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, -1, -1));
 
         jLabel14.setText("Tipo:");
-        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, -1, -1));
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 50, -1, -1));
 
         cbotipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel2.add(cbotipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 130, -1));
+        jPanel2.add(cbotipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, 130, -1));
 
         jButton1.setText("Registrar Unidad");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -178,7 +182,7 @@ public class jfPrincipal extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, -1, -1));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, -1, -1));
 
         jButton9.setText("Registro Por Lote");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -186,31 +190,35 @@ public class jfPrincipal extends javax.swing.JFrame {
                 jButton9ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
+        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel20.setText("UNIDAD");
+        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("DNI:");
-        jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 32, -1, -1));
+        jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
 
         jLabel2.setText("Nombres:");
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 89, -1, -1));
+        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         jLabel3.setText("Ciudad:");
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 202, -1, -1));
+        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
 
         jLabel4.setText("Dirección:");
-        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 142, -1, -1));
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
 
         jLabel5.setText("Vigencia:");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 261, -1, -1));
-        jPanel4.add(txtdni, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 29, 163, -1));
-        jPanel4.add(txtnombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 86, 163, -1));
-        jPanel4.add(txtdireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 139, 163, -1));
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
+        jPanel4.add(txtdni, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 163, -1));
+        jPanel4.add(txtnombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 163, -1));
+        jPanel4.add(txtdireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 163, -1));
 
         cbociudad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel4.add(cbociudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 199, 163, -1));
+        jPanel4.add(cbociudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 163, -1));
 
         jButton3.setText("Buscar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -221,7 +229,7 @@ public class jfPrincipal extends javax.swing.JFrame {
         jPanel4.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, -1, -1));
 
         chkvigencia.setText("vigente");
-        jPanel4.add(chkvigencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, -1, -1));
+        jPanel4.add(chkvigencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, -1, -1));
 
         jButton2.setText("Registrar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -255,22 +263,26 @@ public class jfPrincipal extends javax.swing.JFrame {
         });
         jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, -1, -1));
 
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel21.setText("CLIENTE");
+        jPanel4.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel15.setText("Código:");
-        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 25, -1, -1));
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
 
         jLabel16.setText("Nombre:");
-        jPanel5.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 69, -1, -1));
+        jPanel5.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
 
         jLabel17.setText("Tipo Ciudad:");
-        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 107, -1, -1));
-        jPanel5.add(txtCodCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 26, 147, -1));
-        jPanel5.add(txtNomCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 66, 147, -1));
+        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+        jPanel5.add(txtCodCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 147, -1));
+        jPanel5.add(txtNomCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 147, -1));
 
         cboTipoc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel5.add(cboTipoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 151, -1));
+        jPanel5.add(cboTipoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 151, -1));
 
         jButton7.setText("Nuevo");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -278,7 +290,7 @@ public class jfPrincipal extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel5.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 70, -1));
+        jPanel5.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 70, -1));
 
         jButton8.setText("Guardar");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -286,7 +298,14 @@ public class jfPrincipal extends javax.swing.JFrame {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel5.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
+        jPanel5.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, -1, -1));
+
+        jLabel18.setText("Registra a la ciudad Sola");
+        jPanel5.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel19.setText("CIUDAD");
+        jPanel5.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -356,8 +375,8 @@ public class jfPrincipal extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE))
+                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE))
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -637,7 +656,11 @@ public class jfPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
